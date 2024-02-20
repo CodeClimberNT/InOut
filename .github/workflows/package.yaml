@@ -4,11 +4,11 @@ on:
   push:
     branches: [ main ]
     paths:
-    - 'src/main.py'
+    # - 'src/main.py'
   pull_request:
     branches: [ main ]
     paths:
-    - 'src/main.py'
+    # - 'src/main.py'
 
 jobs:
   build:
