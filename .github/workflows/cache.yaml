@@ -4,8 +4,12 @@ name: Package Application with Pyinstaller
 on:
   push:
     branches: [ main ]
+    paths:
+      - 'src/requirements.txt'
   pull_request:
     branches: [ main ]
+    paths:
+      - 'src/requirements.txt'
 
 jobs:
   build:
@@ -18,4 +22,4 @@ jobs:
       with:
         python-version: '3.12'
         cache: 'pip' # caching pip dependencies
-    - run: pip install -r src/requirements.txt
+    - run: pip install -r requirements.txt
